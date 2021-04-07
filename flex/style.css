@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: brown;
+}
+/* header */
+header {
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    border: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 3px gray;
+}
+header h6 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border-right: 3px solid black;
+}
+header nav {
+    width: 100%;
+    line-height: 100px;
+    height: auto;
+    text-align: center;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    font-size: 30px;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header input {
+    margin-top: 40px;
+    margin-right: 30px;
+    height: 20px;
+}
+/* body */
+
+.wrapper {
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 80%;
+    height: 1200px;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+}
+
+.wrapper .box {
+    background-color: blue;
+    border: 5px solid black;
+    padding-top: 100px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Medias queries*/
+@media only screen and (max-width: 768px) {
+header nav ul li {
+    font-size: 16px;
+    list-style: none;
+    font-weight: bold;
+}
+header input {
+    margin-top: 15px;
+    margin-right: 30px;
+    width: 50px;
+    height: 20px;
+}
+header nav {
+    width: 100%;
+    line-height: 50px;
+}
+header h6 {
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: bold;
+}
+header{
+    height: 50px;
+}
+.wrapper .box {
+
+    line-height: 15px;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+}
